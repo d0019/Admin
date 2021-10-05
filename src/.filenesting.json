@@ -1,0 +1,24 @@
+{
+  "help": "https://go.microsoft.com/fwlink/?linkid=866610",
+  "root": true,
+
+  "dependentFileProviders": {
+    "add": {
+      "pathSegment": {
+        "add": {
+          "ExtensionMethods.*": [ ".cs" ],
+          "Models\\*.*": [ "*.cs" ],
+          "Current.*": [ "*.cs" ],
+          "Pages.*": [ "*.cshtml", "*.cs" ]
+        }
+      },
+      "extensionToExtension": {
+        "add": {
+          ".css": [ ".less" ],
+          ".js": [ ".ts", ".tsx" ],
+          ".js.map": [ ".js" ]
+        }
+      }
+    }
+  }
+}
